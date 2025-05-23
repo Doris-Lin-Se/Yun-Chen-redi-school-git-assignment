@@ -1,0 +1,43 @@
+1. Create an SSH key: 
+ssh-keygen -t rsa -b 4096 -C "yunchen.lin8@gmail.com"
+
+2. Finding out my SSH key: 
+cat ~/.ssh/id_rsa.pub 
+
+3. Add SSH key on GitHub
+
+4. Set my local Git user name and email. 
+git config --global user.name "Yun-Chen" 
+git config --global user.email "yunchen.lin8@gmail.com"
+
+5. Clone the repository on your PC. 
+git clone https://github.com/Doris-Lin-Se/Yun-Chen-redi-school-git-assignment.git
+## I used HTTPS instead of SSH. It works!  
+
+6. cd Yun-Chen-redi-school-git-assignment
+
+7. Create a file called commands.txt in the local copy of the repository.
+touch commands.txt
+
+8. Check the status of the local repository with the command 'git status'.
+git status
+
+9. Add the file to staged area.
+git add commands.txt
+
+10. Commit the file with a meaningful commit message.
+git commit -m "Let's see it will work or not"
+
+11. Push the local main branch to origin.
+git push origin main
+##unfortunately the updates were rejected because I changed readme.md file on GitHub.
+
+12. Re-pull
+git pull origin main
+
+13. Push the local main branch to origin again and it asked me commid merge
+git commid
+git push origin main
+
+
+Done!
